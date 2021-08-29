@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run settting file
         run: |
-          ./windows_config/setting.ps1
+          ./setting.ps1
           ${{ github.event.inputs.chrome_access_code }} -pin=${{ github.event.inputs.pin }}
       - name: Windows Server ready to go 
         run: sleep 86400
