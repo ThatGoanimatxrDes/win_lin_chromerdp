@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run settting file
         run: |
-          sudo bash ./linux_config/setting.sh
+          sudo bash ./setting.sh
           ${{ github.event.inputs.chrome_access_code }} -pin=${{ github.event.inputs.pin }}
       - name: Ubuntu ready to go 
         run: sleep 1d
